@@ -4,11 +4,12 @@ package com.latte_project.stb.savethebird;
  * Created by arimatakeshi on 16/05/16.
  */
 
+import android.graphics.Typeface;
 import android.app.Activity;
-import android.os.Bundle;
-import android.view.Window;
 import android.view.View;
 import android.content.Intent;
+import android.widget.TextView;
+import android.util.Log;
 
 public class TabActivity extends Activity{
 
@@ -35,5 +36,13 @@ public class TabActivity extends Activity{
                 startActivity(intentGame);
                 break;
         }
+    }
+
+    /*
+    * フォントタイプ指定
+    * setFontType()
+    */
+    public void setFontType(TextView txt) {
+        txt.setTypeface(Typeface.createFromAsset(getAssets(), "logotypejp_mp_m_1.1.ttf"));
     }
 }

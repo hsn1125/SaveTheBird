@@ -14,7 +14,6 @@ public class HomeActivity extends TabActivity {
 
         // タイトル消し
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-
         setContentView(R.layout.activity_home);
     }
 
