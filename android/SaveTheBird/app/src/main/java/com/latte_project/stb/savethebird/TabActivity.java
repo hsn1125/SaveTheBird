@@ -45,4 +45,17 @@ public class TabActivity extends Activity{
     public void setFontType(TextView txt) {
         txt.setTypeface(Typeface.createFromAsset(getAssets(), "logotypejp_mp_m_1.1.ttf"));
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // TODO 閉じる時に音を消す処理
+        Log.i("tabactivity", "閉じたよー");
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // TODO 閉じる時に音を消す処理
+        Log.i("tabactivity", "閉じたよーdestory");
+    }
 }
